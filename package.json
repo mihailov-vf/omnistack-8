@@ -1,0 +1,10 @@
+{
+  "name": "omnistack",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Mihailov Vasilievic Filho <mihailov.vf@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^6.1.0"
+  }
+}

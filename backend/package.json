@@ -1,0 +1,17 @@
+{
+  "name": "@omnistack/backend",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "author": "Mihailov Vasilievic Filho <mihailov.vf@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "nodemon"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  }
+}
