@@ -8,8 +8,12 @@ module.exports = {
         const loggedDev = await Dev.findById(user);
         const targetDev = await Dev.findById(devId);
 
-        if(!targetDev) {
-            return res.status(400).json({error: 'Dev does not exists'});
+        if (!targetDev) {
+            return res.status(400).json({ error: 'Dev does not exists' });
+        }
+
+        if (loggedDev.likes.includes(targetDev._id)) {
+            loggedDev.likes.splice(loggedDev.likes.indexOf(targetDev._id), 1);
         }
 
         loggedDev.dislikes.push(targetDev._id);
