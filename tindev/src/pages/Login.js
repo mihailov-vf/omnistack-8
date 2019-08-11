@@ -20,7 +20,7 @@ export default function Login({ navigation }) {
   useEffect(() => {
     AsyncStorage.getItem('user').then(userStorage => {
       if (userStorage) {
-        navigation.navigate('Main', { userStorage });
+        navigation.navigate('Main', { user: userStorage });
       }
     });
   }, [navigation]);
